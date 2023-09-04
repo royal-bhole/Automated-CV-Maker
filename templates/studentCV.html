@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport",content="width=device-width", initial-scale=1.0">
+    <title>Details Form</title>
+    <style>
+.fill{
+	font-size: 30px;
+	color: #EA783B;
+}
+	input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    position:relative;
+    margin: 0%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+body{   padding-left: 1%;
+    color:black;overflow-x: hidden;height: 100%;background-repeat: no-repeat;background-size: 100% 100%}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+textarea{
+    padding: 1px 8px;
+    display: block;
+    width: 100%;
+    border: 1px solid lightcyan;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type=reset]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: azure;
+    display: block;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=reset]:hover{
+    background-color:#45a049;
+}
+html{
+    background-color:lightgrey;
+    color:antiquewhite;
+    font-family: Verdana,sans-serif;
+    vertical-align:text-bottom;
+    font-size: 20px;
+}
+div{
+    text-align: center;
+    display: inline;
+}
+a{
+    margin-bottom:  1px;
+    
+}
+input[type=number]{
+display: block;
+    width: 100%;
+}
+input[type=tel]{
+display: block;
+    width: 100%;
+}
+
+input[type=email]{
+    display: block;
+    width: 100%;
+}
+input[type=date]
+{
+    display: block;
+    width: 40%;
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+}
+</style>
+</head>
+<body>
+    <h1>Form</h1><br>
+    <h2>Please enter you details as follows</h2>
+    <form method="POST" action="{{url_for('hello') }}">
+        Name: <div><input type="text" name="uname" id="uname" placeholder="Name"><br></div>
+       
+        E-mail:<div> <input type="email" placeholder="E-mail" name="email" id="email"></div><br>
+       
+        Contact: <input type="tel" name="contact" id="contact" placeholder="contact"><br>
+
+        Date of Birth:<div> <input type="date" name="dob" id="DOB"><br></div>
+       
+        Address: <textarea name="add" id="add" placeholder="Address" cols="30" rows="2"></textarea><br>
+       
+        Objective: <input type="text" name="obj" id="obj" placeholder="Goal for job you are applyling"> <br>
+
+        <br>Name of the Institute: <input type="text" placeholder="Name of College" name="clg" id="clg"><br>
+       
+
+        CGPA / Percentage in the Qualification :<input type="number" step="0.01" name="gpa" placeholder="Nearest count" id="gp"><br>
+        
+        Graduation Passing Year: <input type="month" name="gpy"> <br>
+
+        Graduation University: <input type="text" name="gpb" id="gpb" placeholder="Ex. SPPU University"><br>
+
+        Graduation Branch: <input type="text" name="gps" id="gps" placeholder="Ex. Computer">
+
+        12th Percentage: <input type="number" step="0.01" name="tp" placeholder="Nearest count" id="tp"><br>
+        
+        12th Passing Year: <input type="month" name="tpy" id="tpy"> <br>
+
+        12th Board Name: <input type="text" name="tpb" id="tpb"> <br>
+
+        10th Percentage : <input type="number" step="0.01" name="bp" id="bp"> <br>
+
+        10th Passing Year: <input type="month" name="bpy" id="bpy"> <br>
+
+        10th Passing Board: <input type="text" name="bpb" id="bpb"> <br>
+
+        Languages known: <input type="text" name="lang" id="lang">
+
+        <br><a>Skills:</a> <textarea name="skill" placeholder="Skills" id="skill" cols="30" rows="2" style="position: relative;"></textarea>
+       
+        <br>Honours And achievements: <textarea name="achievements" id="achievements" cols="30" rows="2" style="position: relative;"></textarea>
+
+        <br><a>Any Extra-curricular Activites:</a> <textarea name="ec" placeholder="Extra Curricular Activites" id="ec" cols="30" rows="2"></textarea>
+       
+
+        <br>Projects: <input type="text" name="proj" id="proj" placeholder="Projects">
+       
+
+        <br><a>Hobbies:</a> <textarea name="hob" placeholder="Hobbies" id="hob" cols="30" rows="2"></textarea>
+    
+       
+        <input type="submit" name="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" name="reset" value="Reset">
+    </form>
+</body>
+</html>
+<!-- Id's to remember for backend
+        name = uname
+        email = email
+        date of birth = dob
+        address = add
+        Highest qualification = qual
+        Name of Institute = clg
+        CGPA = gpa
+        Graduation passing year = gpy
+        Graduation university = gpu
+        Graduation passing branch = gpb
+        12th percentage = tp
+        12th passing year = tpy
+        12th passing = tpb
+        10th percentage = bp
+        10th passing year = bpy
+        10th passing board = bpb
+        Languages known = lang
+        Skills = skills
+        any extra curricular activites = ec
+        Projects = proj
+        Hobbies = hob
+-->
