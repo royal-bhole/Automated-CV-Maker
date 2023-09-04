@@ -1,0 +1,68 @@
+﻿				Automated CV Maker
+
+Thing to learn from the course:-   
+1)  Basic Python Language
+2) Flask Framework in Python
+3) HTML & CSS
+
+
+Summary of the Project ;- 
+
+In this project we have created an Automated CV maker Website
+Using web development tools , Some Bootstrap for making the webpage look attractive and Python and Flask Framework for backend
+It is mainly divided in two parts :- 1)Accepting Details From User
+					     2)Creating a CV from the given details
+
+We used HTML forms to accept the details to enter in the CV 
+Then it is sent to the server i.e backend to store the details for creating a CV 
+A default CV template is taken and then the information taken from user is 
+entered into the template using Python and Flask Framework
+
+Contributions to the project :- 
+Frontend Team :- 1) Rishikesh Marathe
+			2)Aditya Yadav
+
+Backend Team :- 1) Atharva Bhole
+
+
+Detailed Analysis of the Project:
+
+First starting with the template we have to create a template in HTML language 
+but as the template is not enough we have to make it look attractive so also CSS is used in the Project 
+
+The template is designed by Aditya Yadav 
+The Styling work is done by Rishikesh Marathe 
+
+The template is designed by creating a Home Page which gives the overview of the CV Maker then by clicking on the Button it is redirected to the Form to fill the details required for the candidate to create a CV 
+
+Then in form various tags such as <h1> tag along with the <form> tag is used to create a form which takes user input of Details as follows
+
+1 Name 
+2 E-mail
+3 Date of Birth
+4 Address
+5 Highest Qualification 
+6 Name of the Institute
+7 CGPA or Percentage acheived 
+8 Skills 
+9 Project done by the user
+10 Hobbies 
+11 Brach of Interest 
+
+These are entered into the form by input tags to fill the details 
+There are two options 1) To submit the form 2) To reset the form to clear out any mistake while filling the form
+By clicking on the submit button the details are then sent to the backend server
+which is stored in a file in form of Data
+This all work of redirecting from one site to another and storing data in the server is done by Flask Framework which does the main work of co-ordinating with all the files and Data in the Frontend as well as the backend 
+The Flask Framework then uses the data and puts the Data into the CV template to finally create a resume for that a Blank template is used to fill out the details entered by the user in a ordered way and easy to read way by using the syntaxes of Python in HTML file which is done by entering two curly braces 
+ex. {{ Name }}
+which uses the stored input details of the user to put it into the CV 
+Then all the data is entered into the CV by the code written in HTML and comprises of the syntax of Flask Framework
+And atlast the desired CV is created 
+
+
+Project By:-
+
+Atharva Bhole
+Rishikesh Marathe
+Aditya Yadav
